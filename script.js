@@ -60,6 +60,11 @@ function updateCountdown() {
 }
 
 function initReveal() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
+    return;
+  }
+
   document.querySelectorAll(".reveal").forEach((el) => {
     const delay = el.getAttribute("data-delay");
     if (delay) {
@@ -72,10 +77,11 @@ function initReveal() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
         }
       });
     },
-    { threshold: 0.16 }
+    { threshold: 0.16, rootMargin: "0px 0px -6% 0px" }
   );
 
   document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
