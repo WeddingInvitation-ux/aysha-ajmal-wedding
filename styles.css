@@ -14,6 +14,7 @@
   --flower-mist: #cad6eb;
   --paper: #fbfbff;
   --paper-lilac: #f1ebf8;
+  --soft-white: #fdfdff;
 }
 
 * {
@@ -43,6 +44,12 @@ body {
     radial-gradient(circle at 14% 82%, rgba(185, 156, 211, 0.18), transparent 28%),
     radial-gradient(circle at 82% 74%, rgba(171, 198, 227, 0.2), transparent 26%),
     linear-gradient(135deg, var(--bg-a), var(--bg-b) 56%, var(--bg-c));
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid rgba(122, 108, 156, 0.72);
+  outline-offset: 2px;
 }
 
 body:not(.entered) {
@@ -127,6 +134,27 @@ body.entered .site-shell {
   border-radius: 22px;
   border: 1px solid rgba(142, 130, 171, 0.18);
   pointer-events: none;
+}
+
+.entry-halo {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+}
+
+.entry-halo-a {
+  width: 140px;
+  height: 140px;
+  top: -68px;
+  right: -64px;
+}
+
+.entry-halo-b {
+  width: 118px;
+  height: 118px;
+  left: -54px;
+  bottom: -62px;
 }
 
 .entry-mini-floral {
@@ -218,6 +246,15 @@ body.entered .site-shell {
   font-size: 0.98rem;
   position: relative;
   animation: rise-in 1s ease 0.36s both;
+}
+
+.entry-subline {
+  margin: 0.35rem 0 0;
+  color: #7b7899;
+  font-size: 0.81rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
 }
 
 .entry-ornament,
@@ -421,6 +458,29 @@ body.entered .music-toggle {
   content-visibility: visible;
 }
 
+.hero-ribbon {
+  position: absolute;
+  width: 42%;
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(171, 198, 227, 0.45), rgba(185, 156, 211, 0.48));
+  opacity: 0.38;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.hero-ribbon-a {
+  top: 18%;
+  left: -8%;
+  transform: rotate(-7deg);
+}
+
+.hero-ribbon-b {
+  right: -10%;
+  bottom: 16%;
+  transform: rotate(7deg);
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1.08fr 0.92fr;
@@ -451,6 +511,13 @@ body.entered .music-toggle {
   font-size: 0.7rem;
   font-weight: 700;
   color: var(--lavender-deep);
+}
+
+.hero-script {
+  margin: 0.34rem 0 0;
+  font-family: "Alex Brush", cursive;
+  color: #7f769d;
+  font-size: clamp(1.15rem, 2vw, 1.6rem);
 }
 
 .hero h1 {
@@ -534,6 +601,46 @@ body.entered .music-toggle {
 
 .hero-art {
   position: relative;
+  will-change: transform;
+}
+
+.portrait-frame {
+  position: absolute;
+  inset: -12px;
+  border-radius: 24px;
+  pointer-events: none;
+}
+
+.frame-back {
+  border: 1px solid rgba(140, 130, 170, 0.28);
+  transform: translate3d(-10px, 10px, 0) rotate(-2deg);
+}
+
+.frame-front {
+  border: 1px solid rgba(171, 198, 227, 0.5);
+  transform: translate3d(8px, -8px, 0) rotate(1.5deg);
+}
+
+.hero-bloom {
+  position: absolute;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 32% 30%, rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0) 64%),
+    radial-gradient(circle, rgba(171, 198, 227, 0.34), rgba(185, 156, 211, 0.24) 55%, rgba(185, 156, 211, 0));
+  will-change: transform;
+}
+
+.hero-bloom-a {
+  top: -22px;
+  right: -26px;
+}
+
+.hero-bloom-b {
+  left: -26px;
+  bottom: -20px;
 }
 
 .art-glow {
@@ -572,6 +679,16 @@ body.entered .music-toggle {
   will-change: transform;
 }
 
+.hero-portrait figcaption {
+  text-align: center;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #7f7b9c;
+  padding: 0.5rem 0.7rem 0.58rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(239, 244, 253, 0.8));
+}
+
 .hero .floral-spray {
   width: 180px;
   height: 180px;
@@ -598,6 +715,35 @@ body.entered .music-toggle {
   padding: 1.25rem 1rem;
   box-shadow: var(--shadow);
   overflow: hidden;
+}
+
+.panel-white {
+  background: linear-gradient(140deg, rgba(253, 253, 255, 0.9), rgba(236, 243, 252, 0.72), rgba(247, 240, 252, 0.74));
+}
+
+.panel-lilac {
+  background: linear-gradient(140deg, rgba(250, 245, 255, 0.88), rgba(236, 242, 252, 0.72), rgba(233, 223, 245, 0.75));
+}
+
+.panel-blue {
+  background: linear-gradient(140deg, rgba(246, 251, 255, 0.9), rgba(226, 238, 251, 0.74), rgba(240, 231, 250, 0.67));
+}
+
+.panel-crest {
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 12% 30%, rgba(171, 198, 227, 0.28), transparent 30%),
+    radial-gradient(circle at 88% 66%, rgba(185, 156, 211, 0.25), transparent 32%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(238, 243, 252, 0.84));
+}
+
+.ceremony-message {
+  margin: 0;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.06rem, 2.2vw, 1.42rem);
+  color: #5f5c7b;
 }
 
 .panel::before,
@@ -643,6 +789,7 @@ body.entered .music-toggle {
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(1.9rem, 3.8vw, 2.7rem);
+  letter-spacing: 0.01em;
 }
 
 .countdown {
@@ -779,6 +926,16 @@ body.entered .music-toggle {
   text-align: center;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(230, 239, 251, 0.8));
   border-top: 3px solid rgba(171, 198, 227, 0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+.journey article::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(185, 156, 211, 0.66), transparent);
 }
 
 .journey span {
@@ -802,6 +959,10 @@ footer {
   margin: 0 0 0.35rem;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.25rem;
+}
+
+footer.panel {
+  padding-top: 1.4rem;
 }
 
 .floral-divider {
@@ -1023,12 +1184,20 @@ footer {
     justify-content: center;
   }
 
+  .hero-script {
+    text-align: center;
+  }
+
   .card:hover {
     transform: none;
   }
 
   .floral-divider {
     width: min(700px, calc(100% - 2rem));
+  }
+
+  .portrait-frame {
+    display: none;
   }
 }
 
@@ -1052,6 +1221,11 @@ footer {
     font-size: 0.9rem;
   }
 
+  .entry-subline {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+  }
+
   .music-toggle {
     top: 10px;
     right: 10px;
@@ -1068,6 +1242,10 @@ footer {
   .hero h1 {
     justify-content: center;
     text-align: center;
+  }
+
+  .hero-script {
+    font-size: 1.12rem;
   }
 
   .hero-portrait img {
@@ -1119,6 +1297,16 @@ footer {
   .entry-ornament span,
   .hero-ornament span {
     width: 30px;
+  }
+
+  .hero-bloom {
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-portrait figcaption {
+    font-size: 0.65rem;
+    letter-spacing: 0.11em;
   }
 }
 

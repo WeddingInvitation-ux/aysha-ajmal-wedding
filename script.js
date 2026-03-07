@@ -13,8 +13,14 @@ const weddingAudio = document.getElementById("wedding-audio");
 const entryGate = document.getElementById("entry-gate");
 const enterSiteButton = document.getElementById("enter-site");
 const siteShell = document.getElementById("site-shell");
+const heroArt = document.querySelector(".hero-art");
+const heroRibbonA = document.querySelector(".hero-ribbon-a");
+const heroRibbonB = document.querySelector(".hero-ribbon-b");
+const heroBloomA = document.querySelector(".hero-bloom-a");
+const heroBloomB = document.querySelector(".hero-bloom-b");
 
 const progressBar = document.getElementById("scroll-progress-bar");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 function setMusicUi(isPlaying, message) {
   if (!musicToggle || !musicLabel) return;
@@ -60,7 +66,7 @@ function updateCountdown() {
 }
 
 function initReveal() {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  if (prefersReducedMotion) {
     document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
     return;
   }
@@ -96,6 +102,26 @@ function updateScrollMotion() {
 
   if (progressBar) {
     progressBar.style.transform = `scaleX(${progress})`;
+  }
+
+  if (!prefersReducedMotion) {
+    const localRange = Math.min(1, window.scrollY / Math.max(1, viewport * 1.1));
+
+    if (heroArt) {
+      heroArt.style.transform = `translate3d(0, ${Math.round(localRange * -10)}px, 0)`;
+    }
+    if (heroRibbonA) {
+      heroRibbonA.style.transform = `translate3d(${Math.round(localRange * -6)}px, ${Math.round(localRange * -3)}px, 0) rotate(-7deg)`;
+    }
+    if (heroRibbonB) {
+      heroRibbonB.style.transform = `translate3d(${Math.round(localRange * 7)}px, ${Math.round(localRange * 4)}px, 0) rotate(7deg)`;
+    }
+    if (heroBloomA) {
+      heroBloomA.style.transform = `translate3d(${Math.round(localRange * 5)}px, ${Math.round(localRange * -8)}px, 0)`;
+    }
+    if (heroBloomB) {
+      heroBloomB.style.transform = `translate3d(${Math.round(localRange * -6)}px, ${Math.round(localRange * 7)}px, 0)`;
+    }
   }
 }
 
