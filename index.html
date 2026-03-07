@@ -7,7 +7,7 @@
   <meta name="description" content="Wedding invitation for Aysha Mohamed Kassim and Ajmal Rasheed" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Marcellus&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,6 +15,7 @@
     <div class="entry-backdrop-shine" aria-hidden="true"></div>
     <div class="floral-spray floral-entry-left" aria-hidden="true"></div>
     <div class="floral-spray floral-entry-right" aria-hidden="true"></div>
+
     <div class="entry-card">
       <div class="entry-logo" aria-hidden="true">
         <span>A</span>
@@ -23,103 +24,131 @@
       </div>
       <p class="entry-kicker">Wedding Invitation</p>
       <h2 class="entry-headline">Aysha & Ajmal</h2>
+      <p class="entry-note">A day of blessings, family, and heartfelt dua.</p>
       <button id="enter-site" class="enter-btn" type="button">Enter Invitation</button>
     </div>
   </div>
 
   <div id="site-shell" class="site-shell">
-  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
-  <div class="texture" aria-hidden="true"></div>
-  <div class="orb orb-a" aria-hidden="true"></div>
-  <div class="orb orb-b" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+    <div class="texture" aria-hidden="true"></div>
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb orb-b" aria-hidden="true"></div>
 
-  <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false" aria-label="Toggle wedding music">
-    <span class="music-dot" aria-hidden="true"></span>
-    <span id="music-label">Music Off</span>
-  </button>
+    <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false" aria-label="Toggle wedding music">
+      <span class="music-dot" aria-hidden="true"></span>
+      <span id="music-label">Music Off</span>
+    </button>
 
-  <audio id="wedding-audio" src="assets/wedding-song.mp3" preload="auto" loop></audio>
+    <audio id="wedding-audio" src="assets/wedding-song.mp3" preload="auto" loop></audio>
 
-  <header class="hero section reveal">
-    <div class="floral-spray floral-hero-left" aria-hidden="true"></div>
-    <div class="floral-spray floral-hero-right" aria-hidden="true"></div>
-    <p class="eyebrow">Bismillah</p>
-    <p class="invite-line">With gratitude to Allah, our families request your presence</p>
-    <figure class="hero-portrait" aria-hidden="true">
-      <img src="assets/faceless-couple-reference.jpeg" alt="" />
-    </figure>
-    <h1>
-      <span class="name">Aysha</span>
-      <span class="amp">&</span>
-      <span class="name">Ajmal</span>
-    </h1>
-    <p class="date-line">Monday, 11 May 2026 | Nikkah at 12:00 PM</p>
-    <div class="hero-actions">
-      <a class="btn solid" href="#details">Explore Invitation</a>
-      <a class="btn outline" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Miya+Convention+Center+Talikulam">Open Venue Map</a>
-    </div>
-  </header>
+    <header class="hero section reveal" data-delay="50ms">
+      <div class="floral-spray floral-hero-left" aria-hidden="true"></div>
+      <div class="floral-spray floral-hero-right" aria-hidden="true"></div>
 
-  <main>
-    <section class="countdown section panel reveal" aria-label="Countdown">
-      <p class="section-kicker">Countdown</p>
-      <h2 class="section-title">To Our Wedding Day</h2>
-      <div class="timer" id="timer" role="timer" aria-live="polite">
-        <div><span id="days">0</span><small>Days</small></div>
-        <div><span id="hours">0</span><small>Hours</small></div>
-        <div><span id="minutes">0</span><small>Minutes</small></div>
-        <div><span id="seconds">0</span><small>Seconds</small></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">In The Name Of Allah</p>
+          <h1><span>Aysha</span><em>&</em><span>Ajmal</span></h1>
+          <p class="invite-line">With grateful hearts, our families request the honor of your presence at our Nikkah ceremony.</p>
+          <p class="date-line">Monday, 11 May 2026 | Nikkah at 12:00 PM</p>
+          <div class="hero-actions">
+            <a class="btn solid" href="#details">Explore Invitation</a>
+            <a class="btn outline" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Miya+Convention+Center+Talikulam">Open Venue Map</a>
+            <a class="btn ghost" target="_blank" rel="noreferrer" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Aysha+%26+Ajmal+Nikkah&dates=20260511T063000Z/20260511T083000Z&details=You+are+invited+to+our+Nikkah+ceremony.&location=Miya+Convention+Center,+Talikulam">Add To Calendar</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-glow"></div>
+          <figure class="hero-portrait">
+            <img src="assets/faceless-couple-reference.jpeg" alt="" />
+          </figure>
+        </div>
       </div>
-      <p id="countdown-note" class="countdown-note"></p>
-    </section>
+    </header>
 
-    <section id="details" class="section panel reveal">
-      <p class="section-kicker">Couple</p>
-      <h2 class="section-title">Bride & Groom</h2>
-      <div class="cards two">
-        <article class="card profile">
-          <p class="role">Bride</p>
-          <h3>Aysha Mohamed Kassim</h3>
-          <p>D/O Mohamed Kassim and Neena Mohamed Kassim</p>
-          <p>Kolangarakath house, Talikulam, Thrissur</p>
-        </article>
-        <article class="card profile">
-          <p class="role">Groom</p>
-          <h3>Ajmal Rasheed</h3>
-          <p>S/O Rasheed K and Naseema Rasheed</p>
-          <p>Plammottil house, Ariyad, Alappuzha</p>
-        </article>
-      </div>
-    </section>
+    <main>
+      <section class="countdown section panel reveal" data-delay="80ms" aria-label="Countdown">
+        <p class="section-kicker">Countdown</p>
+        <h2 class="section-title">To Our Wedding Day</h2>
+        <div class="timer" id="timer" role="timer" aria-live="polite">
+          <div><span id="days">0</span><small>Days</small></div>
+          <div><span id="hours">0</span><small>Hours</small></div>
+          <div><span id="minutes">0</span><small>Minutes</small></div>
+          <div><span id="seconds">0</span><small>Seconds</small></div>
+        </div>
+        <p id="countdown-note" class="countdown-note"></p>
+      </section>
 
-    <section id="event-info" class="section panel reveal">
-      <p class="section-kicker">Ceremony</p>
-      <h2 class="section-title">Event Information</h2>
-      <div class="cards three">
-        <article class="card centered">
-          <p class="role">Venue</p>
-          <h3>Miya Convention Center</h3>
-          <p>Talikulam</p>
-        </article>
-        <article class="card centered">
-          <p class="role">Date</p>
-          <h3>11th May 2026</h3>
-          <p>Monday</p>
-        </article>
-        <article class="card centered">
-          <p class="role">Nikkah</p>
-          <h3>12:00 PM</h3>
-          <p>Afternoon</p>
-        </article>
-      </div>
-    </section>
+      <section id="details" class="section panel reveal" data-delay="110ms">
+        <p class="section-kicker">Couple</p>
+        <h2 class="section-title">Bride & Groom</h2>
+        <div class="cards two">
+          <article class="card profile">
+            <p class="role">Bride</p>
+            <h3>Aysha Mohamed Kassim</h3>
+            <p>D/O Mohamed Kassim and Neena Mohamed Kassim</p>
+            <p>Kolangarakath house, Talikulam, Thrissur</p>
+          </article>
+          <article class="card profile">
+            <p class="role">Groom</p>
+            <h3>Ajmal Rasheed</h3>
+            <p>S/O Rasheed K and Naseema Rasheed</p>
+            <p>Plammottil house, Ariyad, Alappuzha</p>
+          </article>
+        </div>
+      </section>
 
-  </main>
+      <section id="event-info" class="section panel reveal" data-delay="140ms">
+        <p class="section-kicker">Ceremony</p>
+        <h2 class="section-title">Event Information</h2>
+        <div class="cards three">
+          <article class="card centered">
+            <p class="role">Venue</p>
+            <h3>Miya Convention Center</h3>
+            <p>Talikulam</p>
+          </article>
+          <article class="card centered">
+            <p class="role">Date</p>
+            <h3>11th May 2026</h3>
+            <p>Monday</p>
+          </article>
+          <article class="card centered">
+            <p class="role">Nikkah</p>
+            <h3>12:00 PM</h3>
+            <p>Afternoon</p>
+          </article>
+        </div>
+      </section>
 
-  <footer class="section panel reveal">
-    <p class="closing">We welcome you with love and prayers to celebrate this blessed union.</p>
-    <p class="signature">Aysha & Ajmal Families</p>
-  </footer>
+      <section class="section panel reveal" data-delay="170ms">
+        <p class="section-kicker">Flow</p>
+        <h2 class="section-title">Celebration Journey</h2>
+        <div class="journey">
+          <article>
+            <span>1</span>
+            <h3>Arrival & Welcome</h3>
+            <p>Guests are welcomed with warmth and duas.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Nikkah Ceremony</h3>
+            <p>The sacred solemnization of the union at 12:00 PM.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Blessings & Greetings</h3>
+            <p>Families, friends, and well-wishers share prayers and joy.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section panel reveal" data-delay="190ms">
+      <p class="closing">With prayers and love, we welcome you to celebrate this blessed day with us.</p>
+      <p class="signature">Aysha & Ajmal Families</p>
+    </footer>
   </div>
 
   <script src="script.js"></script>

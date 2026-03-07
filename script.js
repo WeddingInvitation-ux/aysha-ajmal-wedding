@@ -60,6 +60,13 @@ function updateCountdown() {
 }
 
 function initReveal() {
+  document.querySelectorAll(".reveal").forEach((el) => {
+    const delay = el.getAttribute("data-delay");
+    if (delay) {
+      el.style.transitionDelay = delay;
+    }
+  });
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
