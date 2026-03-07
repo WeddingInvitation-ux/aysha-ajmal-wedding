@@ -370,6 +370,32 @@ body.entered .site-shell {
   z-index: 2;
 }
 
+.invitation-main {
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.invitation-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    rgba(171, 198, 227, 0),
+    rgba(171, 198, 227, 0.4) 14%,
+    rgba(185, 156, 211, 0.42) 50%,
+    rgba(171, 198, 227, 0.36) 84%,
+    rgba(171, 198, 227, 0)
+  );
+  pointer-events: none;
+  opacity: 0.58;
+  z-index: 1;
+}
+
 .floral-spray {
   position: absolute;
   width: 230px;
@@ -717,6 +743,20 @@ body.entered .music-toggle {
   overflow: hidden;
 }
 
+.scene {
+  position: relative;
+}
+
+.scene-tag {
+  margin: 0 auto 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.62rem;
+  color: #837ca6;
+  font-weight: 700;
+}
+
 .panel-white {
   background: linear-gradient(140deg, rgba(253, 253, 255, 0.9), rgba(236, 243, 252, 0.72), rgba(247, 240, 252, 0.74));
 }
@@ -950,6 +990,95 @@ body.entered .music-toggle {
   background: linear-gradient(135deg, #b9a5d1, #87759f);
 }
 
+.timeline-section .section-title {
+  margin-bottom: 0.9rem;
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  top: 15px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(171, 198, 227, 0.6), rgba(185, 156, 211, 0.7), rgba(171, 198, 227, 0.6));
+  z-index: 0;
+}
+
+.timeline-step {
+  position: relative;
+  z-index: 1;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.9), rgba(235, 241, 251, 0.8), rgba(241, 235, 248, 0.82));
+  padding: 1.95rem 0.8rem 0.85rem;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(106, 102, 142, 0.14);
+  opacity: 0;
+  transform: translate3d(0, 14px, 0);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #b9a5d1, #87759f);
+  box-shadow: 0 6px 14px rgba(106, 102, 142, 0.22);
+}
+
+.timeline-time {
+  margin: 0;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #6f6a8d;
+  font-weight: 700;
+}
+
+.timeline-step h3 {
+  margin: 0.32rem 0 0.24rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.15rem;
+}
+
+.timeline-step p {
+  margin: 0;
+}
+
+.timeline-section.visible .timeline-step {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.timeline-section.visible .timeline-step:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+.timeline-section.visible .timeline-step:nth-child(3) {
+  transition-delay: 0.16s;
+}
+
+.timeline-section.visible .timeline-step:nth-child(4) {
+  transition-delay: 0.24s;
+}
+
 footer {
   text-align: center;
   padding: 1.25rem 0 2.6rem;
@@ -1062,6 +1191,14 @@ footer.panel {
   will-change: transform, opacity;
 }
 
+.scene-left.reveal {
+  transform: translate3d(-22px, 20px, 0);
+}
+
+.scene-right.reveal {
+  transform: translate3d(22px, 20px, 0);
+}
+
 .reveal.visible {
   opacity: 1;
   transform: translate3d(0, 0, 0);
@@ -1167,6 +1304,7 @@ footer.panel {
   .cards.three,
   .cards.two,
   .timer,
+  .timeline,
   .journey,
   .blessing-grid {
     grid-template-columns: 1fr;
@@ -1198,6 +1336,37 @@ footer.panel {
 
   .portrait-frame {
     display: none;
+  }
+
+  .invitation-main::before {
+    left: 22px;
+    transform: none;
+  }
+
+  .scene-left.reveal,
+  .scene-right.reveal {
+    transform: translate3d(0, 18px, 0);
+  }
+
+  .timeline::before {
+    top: 0;
+    bottom: 0;
+    left: 14px;
+    right: auto;
+    width: 2px;
+    height: auto;
+    background: linear-gradient(180deg, rgba(171, 198, 227, 0.6), rgba(185, 156, 211, 0.72), rgba(171, 198, 227, 0.6));
+  }
+
+  .timeline-step {
+    text-align: left;
+    padding: 0.92rem 0.85rem 0.92rem 2.2rem;
+  }
+
+  .timeline-dot {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -1307,6 +1476,10 @@ footer.panel {
   .hero-portrait figcaption {
     font-size: 0.65rem;
     letter-spacing: 0.11em;
+  }
+
+  .scene-tag {
+    font-size: 0.57rem;
   }
 }
 
