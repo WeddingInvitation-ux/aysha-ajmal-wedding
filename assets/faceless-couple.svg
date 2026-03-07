@@ -1,58 +1,90 @@
-<svg width="760" height="430" viewBox="0 0 760 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Faceless bride and groom illustration">
+<svg width="760" height="460" viewBox="0 0 760 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Faceless wedding couple in lilac and powder blue theme">
   <defs>
-    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F6E1BB"/>
-      <stop offset="100%" stop-color="#D3AF72"/>
+    <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EEF3FC"/>
+      <stop offset="100%" stop-color="#E9E0F5"/>
     </linearGradient>
-    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#B88945"/>
-      <stop offset="100%" stop-color="#8C6229"/>
+    <linearGradient id="groomOutfit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FDFEFF"/>
+      <stop offset="100%" stop-color="#DCE9F8"/>
     </linearGradient>
-    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#EFE3CF"/>
-      <stop offset="100%" stop-color="#D9C5A5"/>
+    <linearGradient id="brideLehenga" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#CFBDE3"/>
+      <stop offset="100%" stop-color="#A98CC8"/>
     </linearGradient>
+    <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E9DEFA" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#BDD4EE" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="flowerA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.5 0.5) scale(0.5)">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#CDB8E4"/>
+    </radialGradient>
   </defs>
 
-  <ellipse cx="380" cy="370" rx="285" ry="38" fill="#E3CFAD" opacity="0.55"/>
+  <rect x="96" y="56" width="568" height="338" rx="42" fill="url(#bgGlow)"/>
+  <ellipse cx="380" cy="384" rx="238" ry="30" fill="#C9D2E6" opacity="0.55"/>
 
-  <g opacity="0.92">
-    <circle cx="152" cy="128" r="4" fill="#BE9A63"/>
-    <circle cx="620" cy="98" r="4" fill="#BE9A63"/>
-    <circle cx="582" cy="160" r="3" fill="#BE9A63"/>
-    <circle cx="208" cy="86" r="3" fill="#BE9A63"/>
+  <g opacity="0.9">
+    <g transform="translate(128 90)">
+      <circle cx="38" cy="38" r="22" fill="url(#flowerA)"/>
+      <circle cx="64" cy="26" r="16" fill="#D8C6EB"/>
+      <circle cx="62" cy="52" r="14" fill="#BFD5EF"/>
+      <circle cx="22" cy="62" r="14" fill="#D2BFE8"/>
+      <circle cx="46" cy="76" r="12" fill="#E8ECF8"/>
+      <circle cx="86" cy="52" r="9" fill="#AEC8E6"/>
+    </g>
+    <g transform="translate(578 250)">
+      <circle cx="30" cy="30" r="20" fill="url(#flowerA)"/>
+      <circle cx="50" cy="18" r="14" fill="#D8C6EB"/>
+      <circle cx="48" cy="42" r="12" fill="#BFD5EF"/>
+      <circle cx="16" cy="48" r="12" fill="#D2BFE8"/>
+      <circle cx="68" cy="40" r="8" fill="#AEC8E6"/>
+    </g>
   </g>
 
-  <g transform="translate(180 58)">
-    <ellipse cx="120" cy="300" rx="98" ry="18" fill="#CEB089" opacity="0.52"/>
+  <g transform="translate(238 100)">
+    <ellipse cx="84" cy="258" rx="74" ry="14" fill="#C5CDE0" opacity="0.6"/>
 
-    <path d="M18 300C26 225 62 172 120 172C178 172 214 225 222 300H18Z" fill="url(#g1)"/>
-    <path d="M54 298C60 242 82 209 120 209C158 209 180 242 186 298H54Z" fill="#B48542" opacity="0.56"/>
+    <circle cx="86" cy="72" r="22" fill="#EEDCC9"/>
+    <path d="M58 74C58 46 72 30 86 30C100 30 114 46 114 74V82H58V74Z" fill="#F8FAFE"/>
+    <path d="M56 56H116L107 43H65L56 56Z" fill="#B2CAE6"/>
+    <path d="M86 64L104 70V82H68V70L86 64Z" fill="#8E7CAB"/>
 
-    <rect x="92" y="132" width="56" height="52" rx="20" fill="#C39651"/>
-    <circle cx="120" cy="114" r="23" fill="#E8CFA7"/>
+    <path d="M36 256V136C36 106 58 88 86 88C114 88 136 106 136 136V256H36Z" fill="url(#groomOutfit)"/>
+    <rect x="81" y="110" width="10" height="132" rx="5" fill="#A890C7"/>
+    <circle cx="86" cy="140" r="3.5" fill="#A890C7"/>
+    <circle cx="86" cy="158" r="3.5" fill="#A890C7"/>
+    <circle cx="86" cy="176" r="3.5" fill="#A890C7"/>
 
-    <path d="M76 124C76 83 96 58 121 58C146 58 167 83 167 124V146H76V124Z" fill="url(#g2)"/>
-    <path d="M46 166C52 113 78 82 121 78C166 82 190 112 197 168L167 176C162 139 145 120 121 118C97 120 80 140 76 177L46 166Z" fill="#F0DEC0"/>
+    <path d="M35 142C47 126 62 116 80 114V254H35V142Z" fill="#B8D0EA" opacity="0.9"/>
+    <path d="M137 146C126 130 111 120 93 118V254H137V146Z" fill="#CDB9E5" opacity="0.88"/>
 
-    <path d="M64 164L83 300" stroke="#F0DEC0" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
-    <path d="M176 164L157 300" stroke="#F0DEC0" stroke-width="7" stroke-linecap="round" opacity="0.9"/>
+    <rect x="20" y="158" width="18" height="95" rx="9" fill="#EAF1FC"/>
+    <rect x="134" y="158" width="18" height="95" rx="9" fill="#EAF1FC"/>
   </g>
 
-  <g transform="translate(376 60)">
-    <ellipse cx="120" cy="300" rx="96" ry="18" fill="#CEB089" opacity="0.52"/>
+  <g transform="translate(336 104)">
+    <ellipse cx="108" cy="258" rx="86" ry="16" fill="#C5CDE0" opacity="0.6"/>
 
-    <path d="M62 302V168C62 140 85 118 113 118H127C155 118 178 140 178 168V302H62Z" fill="url(#g3)"/>
-    <rect x="114" y="145" width="12" height="145" rx="6" fill="#B48A4A" opacity="0.9"/>
-    <circle cx="120" cy="176" r="4" fill="#B48A4A"/>
-    <circle cx="120" cy="196" r="4" fill="#B48A4A"/>
-    <circle cx="120" cy="216" r="4" fill="#B48A4A"/>
+    <path d="M18 256C26 184 62 132 108 132C154 132 190 184 198 256H18Z" fill="url(#brideLehenga)"/>
+    <path d="M50 255C56 206 77 174 108 174C139 174 160 206 166 255H50Z" fill="#8E79AB" opacity="0.45"/>
 
-    <circle cx="120" cy="100" r="22" fill="#E7CCA1"/>
-    <path d="M88 100C88 73 102 58 120 58C138 58 152 73 152 100V106H88V100Z" fill="#8D652A"/>
-    <path d="M89 88H151L143 73H97L89 88Z" fill="#BA945A"/>
+    <circle cx="108" cy="78" r="21" fill="#EEDCC9"/>
+    <rect x="84" y="97" width="48" height="48" rx="18" fill="#BDA8D6"/>
 
-    <rect x="47" y="178" width="20" height="108" rx="10" fill="#E5D2B5"/>
-    <rect x="173" y="178" width="20" height="108" rx="10" fill="#E5D2B5"/>
+    <path d="M58 90C58 50 79 28 108 28C137 28 158 50 158 90V118H58V90Z" fill="url(#veil)"/>
+    <path d="M36 128C42 78 67 50 108 46C149 50 173 78 180 128L155 134C150 99 136 84 108 82C80 84 66 99 61 134L36 128Z" fill="#E9EFFA" opacity="0.95"/>
+
+    <path d="M52 131L70 256" stroke="#EDF2FB" stroke-width="7" stroke-linecap="round"/>
+    <path d="M165 131L146 256" stroke="#EDF2FB" stroke-width="7" stroke-linecap="round"/>
+
+    <circle cx="93" cy="178" r="2.4" fill="#E7D9F7"/>
+    <circle cx="122" cy="188" r="2.4" fill="#D8E7F8"/>
+    <circle cx="106" cy="208" r="2.4" fill="#E7D9F7"/>
+    <circle cx="138" cy="226" r="2.4" fill="#D8E7F8"/>
+    <circle cx="78" cy="220" r="2.4" fill="#E7D9F7"/>
   </g>
+
+  <path d="M338 222C332 208 320 200 304 197" stroke="#AFC6E4" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
 </svg>
