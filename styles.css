@@ -43,14 +43,12 @@ body:not(.entered) {
 .site-shell {
   opacity: 0;
   transform: scale(1.015);
-  filter: blur(10px);
-  transition: opacity 0.85s ease, transform 0.85s ease, filter 0.85s ease;
+  transition: opacity 0.85s ease, transform 0.85s ease;
 }
 
 body.entered .site-shell {
   opacity: 1;
   transform: scale(1);
-  filter: blur(0);
 }
 
 .entry-gate {
@@ -95,7 +93,6 @@ body.entered .site-shell {
   box-shadow: 0 20px 55px rgba(67, 43, 16, 0.17);
   padding: 1.7rem 1.4rem;
   text-align: center;
-  backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
   animation: gate-pop 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -200,7 +197,6 @@ body.entered .site-shell {
   height: 3px;
   z-index: 80;
   background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(6px);
 }
 
 .scroll-progress span {
@@ -227,7 +223,6 @@ body.entered .site-shell {
   filter: blur(3px);
   z-index: 1;
   pointer-events: none;
-  transition: transform 0.25s linear;
 }
 
 .orb-a {
@@ -251,9 +246,7 @@ body.entered .site-shell {
   margin: 1.2rem auto;
   position: relative;
   z-index: 2;
-  transform: translate3d(0, var(--section-y, 0), 0) scale(var(--section-scale, 1));
-  opacity: var(--section-opacity, 1);
-  will-change: transform, opacity;
+  will-change: opacity;
 }
 
 .music-toggle {
@@ -550,11 +543,13 @@ footer {
 
 .reveal {
   opacity: 0;
-  transition: opacity 0.9s ease;
+  transform: translate3d(0, 20px, 0);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .reveal.visible {
   opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 
 @keyframes rise-in {

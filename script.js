@@ -15,9 +15,6 @@ const enterSiteButton = document.getElementById("enter-site");
 const siteShell = document.getElementById("site-shell");
 
 const progressBar = document.getElementById("scroll-progress-bar");
-const sections = Array.from(document.querySelectorAll(".section"));
-const orbA = document.querySelector(".orb-a");
-const orbB = document.querySelector(".orb-b");
 
 function setMusicUi(isPlaying, message) {
   if (!musicToggle || !musicLabel) return;
@@ -80,35 +77,12 @@ function initReveal() {
 let motionTicking = false;
 
 function updateScrollMotion() {
-  const scrollY = window.scrollY;
   const viewport = window.innerHeight;
   const maxScroll = Math.max(1, document.documentElement.scrollHeight - viewport);
-  const progress = Math.min(1, scrollY / maxScroll);
+  const progress = Math.min(1, window.scrollY / maxScroll);
 
   if (progressBar) {
     progressBar.style.transform = `scaleX(${progress})`;
-  }
-
-  sections.forEach((section) => {
-    const rect = section.getBoundingClientRect();
-    const center = rect.top + rect.height / 2;
-    const offset = (center - viewport / 2) / viewport;
-
-    const shift = Math.max(-22, Math.min(22, offset * 20));
-    const scale = 1 - Math.min(0.022, Math.abs(offset) * 0.022);
-    const opacity = 1 - Math.min(0.18, Math.abs(offset) * 0.18);
-
-    section.style.setProperty("--section-y", `${shift.toFixed(2)}px`);
-    section.style.setProperty("--section-scale", scale.toFixed(3));
-    section.style.setProperty("--section-opacity", opacity.toFixed(3));
-  });
-
-  if (orbA) {
-    orbA.style.transform = `translate3d(${(scrollY * 0.02).toFixed(2)}px, ${(-scrollY * 0.06).toFixed(2)}px, 0)`;
-  }
-
-  if (orbB) {
-    orbB.style.transform = `translate3d(${(-scrollY * 0.017).toFixed(2)}px, ${(scrollY * 0.05).toFixed(2)}px, 0)`;
   }
 }
 
