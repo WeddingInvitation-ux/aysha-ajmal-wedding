@@ -170,13 +170,15 @@ body.entered .site-shell {
   font-family: "Marcellus", serif;
   font-size: clamp(1.9rem, 4.5vw, 2.7rem);
   letter-spacing: 0.02em;
+  color: #5c5977;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
   position: relative;
   animation: rise-in 1s ease 0.28s both;
 }
 
 .entry-note {
   margin: 0.55rem 0 0;
-  color: var(--muted);
+  color: #6c6989;
   font-size: 0.98rem;
   position: relative;
   animation: rise-in 1s ease 0.36s both;
@@ -343,7 +345,9 @@ body.entered .music-toggle {
 }
 
 .hero {
-  min-height: 94vh;
+  display: grid;
+  align-items: center;
+  min-height: 82vh;
   border-radius: 28px;
   padding: 4rem 1.2rem 2.6rem;
   background:
@@ -362,6 +366,16 @@ body.entered .music-toggle {
   gap: 1.3rem;
   position: relative;
   z-index: 1;
+}
+
+.scroll-cue {
+  margin: 0.55rem auto 0;
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #7e7a9f;
+  opacity: 0.88;
 }
 
 .hero-copy {
