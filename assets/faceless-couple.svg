@@ -1,90 +1,87 @@
-<svg width="760" height="460" viewBox="0 0 760 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Faceless wedding couple in lilac and powder blue theme">
+<svg width="760" height="460" viewBox="0 0 760 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Faceless bride and groom standing together">
   <defs>
-    <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#EEF3FC"/>
-      <stop offset="100%" stop-color="#E9E0F5"/>
-    </linearGradient>
-    <linearGradient id="groomOutfit" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="groomSherwani" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#FDFEFF"/>
-      <stop offset="100%" stop-color="#DCE9F8"/>
+      <stop offset="100%" stop-color="#DDE8F7"/>
     </linearGradient>
-    <linearGradient id="brideLehenga" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#CFBDE3"/>
-      <stop offset="100%" stop-color="#A98CC8"/>
+    <linearGradient id="groomShawl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#AFC7E4"/>
+      <stop offset="100%" stop-color="#8EAFD1"/>
     </linearGradient>
-    <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#E9DEFA" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#BDD4EE" stop-opacity="0.85"/>
+    <linearGradient id="brideSkirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D7C6EA"/>
+      <stop offset="100%" stop-color="#AB8EC9"/>
     </linearGradient>
-    <radialGradient id="flowerA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.5 0.5) scale(0.5)">
-      <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#CDB8E4"/>
-    </radialGradient>
+    <linearGradient id="brideDupatta" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EDE3FB"/>
+      <stop offset="100%" stop-color="#BFD5EE"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#BEABD7"/>
+      <stop offset="100%" stop-color="#95B6D6"/>
+    </linearGradient>
   </defs>
 
-  <rect x="96" y="56" width="568" height="338" rx="42" fill="url(#bgGlow)"/>
-  <ellipse cx="380" cy="384" rx="238" ry="30" fill="#C9D2E6" opacity="0.55"/>
+  <ellipse cx="380" cy="406" rx="166" ry="24" fill="#C8D0E3" opacity="0.55"/>
 
   <g opacity="0.9">
-    <g transform="translate(128 90)">
-      <circle cx="38" cy="38" r="22" fill="url(#flowerA)"/>
-      <circle cx="64" cy="26" r="16" fill="#D8C6EB"/>
-      <circle cx="62" cy="52" r="14" fill="#BFD5EF"/>
-      <circle cx="22" cy="62" r="14" fill="#D2BFE8"/>
-      <circle cx="46" cy="76" r="12" fill="#E8ECF8"/>
-      <circle cx="86" cy="52" r="9" fill="#AEC8E6"/>
-    </g>
-    <g transform="translate(578 250)">
-      <circle cx="30" cy="30" r="20" fill="url(#flowerA)"/>
-      <circle cx="50" cy="18" r="14" fill="#D8C6EB"/>
-      <circle cx="48" cy="42" r="12" fill="#BFD5EF"/>
-      <circle cx="16" cy="48" r="12" fill="#D2BFE8"/>
-      <circle cx="68" cy="40" r="8" fill="#AEC8E6"/>
-    </g>
+    <circle cx="250" cy="132" r="9" fill="#D8C6EB"/>
+    <circle cx="265" cy="120" r="6" fill="#AEC8E6"/>
+    <circle cx="238" cy="118" r="6" fill="#E9EDF7"/>
+    <circle cx="515" cy="270" r="9" fill="#D8C6EB"/>
+    <circle cx="529" cy="258" r="6" fill="#AEC8E6"/>
+    <circle cx="502" cy="255" r="6" fill="#E9EDF7"/>
   </g>
 
-  <g transform="translate(238 100)">
-    <ellipse cx="84" cy="258" rx="74" ry="14" fill="#C5CDE0" opacity="0.6"/>
+  <g transform="translate(250 70)">
+    <ellipse cx="66" cy="320" rx="56" ry="11" fill="#C7CEE0" opacity="0.5"/>
 
-    <circle cx="86" cy="72" r="22" fill="#EEDCC9"/>
-    <path d="M58 74C58 46 72 30 86 30C100 30 114 46 114 74V82H58V74Z" fill="#F8FAFE"/>
-    <path d="M56 56H116L107 43H65L56 56Z" fill="#B2CAE6"/>
-    <path d="M86 64L104 70V82H68V70L86 64Z" fill="#8E7CAB"/>
+    <circle cx="70" cy="74" r="22" fill="#EFDCC9"/>
+    <path d="M44 73C44 42 57 22 70 22C83 22 96 42 96 73V81H44V73Z" fill="#FCFEFF"/>
+    <path d="M42 56H99L91 43H50L42 56Z" fill="#B6CCE8"/>
+    <path d="M58 48H83" stroke="#9EB8DA" stroke-width="4" stroke-linecap="round"/>
 
-    <path d="M36 256V136C36 106 58 88 86 88C114 88 136 106 136 136V256H36Z" fill="url(#groomOutfit)"/>
-    <rect x="81" y="110" width="10" height="132" rx="5" fill="#A890C7"/>
-    <circle cx="86" cy="140" r="3.5" fill="#A890C7"/>
-    <circle cx="86" cy="158" r="3.5" fill="#A890C7"/>
-    <circle cx="86" cy="176" r="3.5" fill="#A890C7"/>
+    <path d="M26 322V142C26 109 45 90 70 90C95 90 114 109 114 142V322H26Z" fill="url(#groomSherwani)"/>
+    <rect x="66" y="112" width="9" height="174" rx="4.5" fill="#AD96CB"/>
+    <circle cx="70.5" cy="146" r="3" fill="#AD96CB"/>
+    <circle cx="70.5" cy="164" r="3" fill="#AD96CB"/>
+    <circle cx="70.5" cy="182" r="3" fill="#AD96CB"/>
 
-    <path d="M35 142C47 126 62 116 80 114V254H35V142Z" fill="#B8D0EA" opacity="0.9"/>
-    <path d="M137 146C126 130 111 120 93 118V254H137V146Z" fill="#CDB9E5" opacity="0.88"/>
+    <path d="M18 162C30 139 46 123 66 118V322H18V162Z" fill="url(#groomShawl)"/>
+    <path d="M116 157C105 139 90 126 75 121V322H116V157Z" fill="#CBB8E3" opacity="0.92"/>
 
-    <rect x="20" y="158" width="18" height="95" rx="9" fill="#EAF1FC"/>
-    <rect x="134" y="158" width="18" height="95" rx="9" fill="#EAF1FC"/>
+    <rect x="10" y="182" width="16" height="112" rx="8" fill="#EBF1FC"/>
+    <rect x="114" y="182" width="16" height="112" rx="8" fill="#EBF1FC"/>
+
+    <path d="M110 172C135 166 155 170 174 188" stroke="#A1BCDC" stroke-width="7" stroke-linecap="round"/>
+    <path d="M102 183C121 181 139 188 150 198" stroke="#BCA8D5" stroke-width="5" stroke-linecap="round"/>
   </g>
 
-  <g transform="translate(336 104)">
-    <ellipse cx="108" cy="258" rx="86" ry="16" fill="#C5CDE0" opacity="0.6"/>
+  <g transform="translate(340 88)">
+    <ellipse cx="110" cy="302" rx="82" ry="13" fill="#C7CEE0" opacity="0.5"/>
 
-    <path d="M18 256C26 184 62 132 108 132C154 132 190 184 198 256H18Z" fill="url(#brideLehenga)"/>
-    <path d="M50 255C56 206 77 174 108 174C139 174 160 206 166 255H50Z" fill="#8E79AB" opacity="0.45"/>
+    <path d="M30 304C40 209 75 160 110 160C146 160 180 209 190 304H30Z" fill="url(#brideSkirt)"/>
+    <path d="M58 303C65 246 84 213 110 213C136 213 155 246 162 303H58Z" fill="#917AAD" opacity="0.42"/>
 
-    <circle cx="108" cy="78" r="21" fill="#EEDCC9"/>
-    <rect x="84" y="97" width="48" height="48" rx="18" fill="#BDA8D6"/>
+    <circle cx="110" cy="100" r="19" fill="#EFDCC9"/>
+    <rect x="89" y="114" width="42" height="44" rx="18" fill="#C0ABD8"/>
 
-    <path d="M58 90C58 50 79 28 108 28C137 28 158 50 158 90V118H58V90Z" fill="url(#veil)"/>
-    <path d="M36 128C42 78 67 50 108 46C149 50 173 78 180 128L155 134C150 99 136 84 108 82C80 84 66 99 61 134L36 128Z" fill="#E9EFFA" opacity="0.95"/>
+    <path d="M64 108C64 70 81 48 110 48C139 48 156 70 156 108V137H64V108Z" fill="url(#brideDupatta)"/>
+    <path d="M44 145C48 95 72 66 110 61C149 66 173 95 178 145L156 150C151 117 137 98 110 96C83 98 68 116 64 150L44 145Z" fill="#EEF3FC" opacity="0.95"/>
 
-    <path d="M52 131L70 256" stroke="#EDF2FB" stroke-width="7" stroke-linecap="round"/>
-    <path d="M165 131L146 256" stroke="#EDF2FB" stroke-width="7" stroke-linecap="round"/>
+    <path d="M54 149L74 304" stroke="#EDF2FB" stroke-width="7" stroke-linecap="round"/>
+    <path d="M168 149L148 304" stroke="#EDF2FB" stroke-width="7" stroke-linecap="round"/>
 
-    <circle cx="93" cy="178" r="2.4" fill="#E7D9F7"/>
-    <circle cx="122" cy="188" r="2.4" fill="#D8E7F8"/>
-    <circle cx="106" cy="208" r="2.4" fill="#E7D9F7"/>
-    <circle cx="138" cy="226" r="2.4" fill="#D8E7F8"/>
-    <circle cx="78" cy="220" r="2.4" fill="#E7D9F7"/>
+    <path d="M45 188C25 181 14 185 0 198" stroke="#A1BCDC" stroke-width="7" stroke-linecap="round"/>
+
+    <circle cx="94" cy="228" r="2.3" fill="#DFE9F8"/>
+    <circle cx="112" cy="248" r="2.3" fill="#E5D9F4"/>
+    <circle cx="132" cy="270" r="2.3" fill="#DFE9F8"/>
+    <circle cx="154" cy="240" r="2.3" fill="#E5D9F4"/>
+    <circle cx="78" cy="258" r="2.3" fill="#E5D9F4"/>
+
+    <path d="M99 108C95 114 96 125 102 131C107 136 115 136 120 131C125 126 126 116 122 109" stroke="#A892C8" stroke-width="3" stroke-linecap="round"/>
   </g>
 
-  <path d="M338 222C332 208 320 200 304 197" stroke="#AFC6E4" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+  <path d="M356 262L363 283" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
 </svg>
