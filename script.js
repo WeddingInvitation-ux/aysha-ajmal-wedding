@@ -27,7 +27,7 @@ function setMusicUi(isPlaying, message) {
 
   musicToggle.classList.toggle("playing", isPlaying);
   musicToggle.setAttribute("aria-pressed", String(isPlaying));
-  musicLabel.textContent = message || (isPlaying ? "Music On" : "Music Off");
+  musicLabel.textContent = message || (isPlaying ? "Dua On" : "Dua Off");
 }
 
 function updateCountdown() {
@@ -141,11 +141,11 @@ async function tryPlayMusic(source) {
   try {
     await weddingAudio.play();
     localStorage.setItem("wedding_music", "on");
-    setMusicUi(true, "Music On");
+    setMusicUi(true, "Dua On");
     return true;
   } catch (error) {
     if (source === "autoplay") {
-      setMusicUi(false, "Tap For Music");
+      setMusicUi(false, "Tap For Dua");
     } else {
       setMusicUi(false, "Tap Again");
     }
@@ -158,7 +158,7 @@ function stopMusic() {
 
   weddingAudio.pause();
   localStorage.setItem("wedding_music", "off");
-  setMusicUi(false, "Music Off");
+  setMusicUi(false, "Dua Off");
 }
 
 function enterInvitation() {
@@ -208,7 +208,7 @@ function initMusic() {
   if (!musicToggle || !musicLabel || !weddingAudio) return;
 
   weddingAudio.volume = 0.52;
-  setMusicUi(false, "Music Off");
+  setMusicUi(false, "Dua Off");
 
   musicToggle.addEventListener("click", async () => {
     if (weddingAudio.paused) {
@@ -222,13 +222,13 @@ function initMusic() {
   weddingAudio.addEventListener("play", () => setMusicUi(true, "Music On"));
   weddingAudio.addEventListener("pause", () => {
     if (localStorage.getItem("wedding_music") === "off") {
-      setMusicUi(false, "Music Off");
+      setMusicUi(false, "Dua Off");
       return;
     }
-    setMusicUi(false, "Music Off");
+    setMusicUi(false, "Dua Off");
   });
 
-  weddingAudio.addEventListener("error", () => setMusicUi(false, "Music Error"));
+  weddingAudio.addEventListener("error", () => setMusicUi(false, "Dua Error"));
 }
 
 updateCountdown();
